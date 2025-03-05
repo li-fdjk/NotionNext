@@ -10,29 +10,29 @@ const CONFIG = {
 
   // 英雄区块导航
   STARTER_HERO_ENABLE: true, // 开启英雄区
-  STARTER_HERO_TITLE_1: '开源且免费的基于 Notion 笔记的网站构建工具', // 英雄区文字
-  STARTER_HERO_TITLE_2: '通过笔记无感知地建站、成倍放大您的价值', // 英雄区文字
+  STARTER_HERO_TITLE_1: '服务含概：国际快递、转运、集运服务，中国寄美国、英国、法国、日本、意大利等全球180多个国家。提供空运、海运、铁路运输等各种线路。', // 英雄区文字
+  STARTER_HERO_TITLE_2: '在淘宝、拼多多、京东购物，寄行李，寄家人包裹，都方便。', // 英雄区文字
   // 英雄区两个按钮，如果TEXT留空则隐藏按钮
-  STARTER_HERO_BUTTON_1_TEXT: '开始体验', // 英雄区按钮
+  STARTER_HERO_BUTTON_1_TEXT: '联系我们', // 英雄区按钮
   STARTER_HERO_BUTTON_1_URL:
-    'https://docs.tangly1024.com/article/vercel-deploy-notion-next', // 英雄区按钮
-  STARTER_HERO_BUTTON_2_TEXT: '在Github上关注', // 英雄区按钮
-  STARTER_HERO_BUTTON_2_URL: 'https://github.com/tangly1024/NotionNext', // 英雄区按钮
-  STARTER_HERO_BUTTON_2_ICON: '/images/starter/github.svg', // 英雄区按钮2的图标，不需要则留空
+    '/about', // 英雄区按钮
+  STARTER_HERO_BUTTON_2_TEXT: '', // 英雄区按钮
+  STARTER_HERO_BUTTON_2_URL: '', // 英雄区按钮
+  STARTER_HERO_BUTTON_2_ICON: '', // 英雄区按钮2的图标，不需要则留空
 
   // 英雄区配图，如需隐藏，改为空值即可 ''
   STARTER_HERO_PREVIEW_IMAGE: '/images/starter/hero/hero-image.webp', // 产品预览图 ，默认读取public目录下图片
   STARTER_HERO_BANNER_IMAGE: '', // hero区下方的全宽图
 
   // 顶部右侧导航暗流
-  STARTER_NAV_BUTTON_1_TEXT: 'Sign In',
-  STARTER_NAV_BUTTON_1_URL: '/sign-in',
+  STARTER_NAV_BUTTON_1_TEXT: '',
+  STARTER_NAV_BUTTON_1_URL: '',
 
-  STARTER_NAV_BUTTON_2_TEXT: 'Sign Up',
-  STARTER_NAV_BUTTON_2_URL: '/sign-up',
+  STARTER_NAV_BUTTON_2_TEXT: '',
+  STARTER_NAV_BUTTON_2_URL: '',
 
   // 特性区块
-  STARTER_FEATURE_ENABLE: true, // 特性区块开关
+  STARTER_FEATURE_ENABLE: false, // 特性区块开关
   STARTER_FEATURE_TITLE: '特性', // 特性
   STARTER_FEATURE_TEXT_1: 'NotionNext的主要特性', // 特性
   STARTER_FEATURE_TEXT_2:
@@ -60,7 +60,7 @@ const CONFIG = {
   STARTER_FEATURE_4_BUTTON_URL: 'https://docs.tangly1024.com/about', // 特性4
 
   // 首页ABOUT区块
-  STARTER_ABOUT_ENABLE: true, // ABOUT区块开关
+  STARTER_ABOUT_ENABLE: false, // ABOUT区块开关
   STARTER_ABOUT_TITLE: '一套轻量实用的建站解决方案',
   STARTER_ABOUT_TEXT:
     'NotionNext的愿景是帮助非技术人员的小白，最低成本、最快速地搭建自己的网站，帮助您将自己的产品与故事高效地传达给世界。 <br /> <br /> 功能强大的Notion笔记，简单快速的Vercel托管平台，组成一个简单的网站',
@@ -73,7 +73,7 @@ const CONFIG = {
   STARTER_ABOUT_TIPS_3: '正在线上运行',
 
   // 首页价格区块
-  STARTER_PRICING_ENABLE: true, // 价格区块开关
+  STARTER_PRICING_ENABLE: false, // 价格区块开关
   STARTER_PRICING_TITLE: '价格表',
   STARTER_PRICING_TEXT_1: '很棒的定价计划',
   STARTER_PRICING_TEXT_2:
@@ -111,7 +111,7 @@ const CONFIG = {
     'https://tangly1024.lemonsqueezy.com/checkout/buy/df924d66-09dc-42a4-a632-a6b0c5cc4f28',
 
   // 首页用户测评区块
-  STARTER_TESTIMONIALS_ENABLE: true, // 测评区块开关
+  STARTER_TESTIMONIALS_ENABLE: false, // 测评区块开关
   STARTER_TESTIMONIALS_TITLE: '用户反馈',
   STARTER_TESTIMONIALS_TEXT_1: '我们的用户怎么说',
   STARTER_TESTIMONIALS_TEXT_2:
@@ -176,7 +176,7 @@ const CONFIG = {
   ],
 
   //   FAQ 常见问题模块
-  STARTER_FAQ_ENABLE: true, // 常见问题模块开关
+  STARTER_FAQ_ENABLE: false, // 常见问题模块开关
   STARTER_FAQ_TITLE: '常见问题解答',
   STARTER_FAQ_TEXT_1: '有任何问题吗？请看这里',
   STARTER_FAQ_TEXT_2: '我们收集了常见的用户疑问',
@@ -198,7 +198,7 @@ const CONFIG = {
     '先检查Notion_Page_ID是否正确配置，其次由于博客的每个页面都有独立缓存，刷新网页后即可解决',
 
   // 团队成员区块
-  STARTER_TEAM_ENABLE: true, // 团队成员区块开关
+  STARTER_TEAM_ENABLE: false, // 团队成员区块开关
   STARTER_TEAM_TITLE: '团队成员',
   STARTER_TEAM_TEXT_1: '我们的开发者团队',
   STARTER_TEAM_TEXT_2:
@@ -230,7 +230,7 @@ const CONFIG = {
   ],
 
   // 博客文章区块
-  STARTER_BLOG_ENABLE: true, // 首页博文区块开关
+  STARTER_BLOG_ENABLE: false, // 首页博文区块开关
   STARTER_BLOG_TITLE: '我们的博客',
   STARTER_BLOG_COUNT: 3, // 首页博文区块默认展示前3篇文章
   STARTER_BLOG_TEXT_1: '最近的新闻',
@@ -238,7 +238,7 @@ const CONFIG = {
     '这里会发布一些关于NotionNext的最新动态，包括新的动向、新的未来计划，以及新功能的特性',
 
   // 联系模块
-  STARTER_CONTACT_ENABLE: true, // 联系模块开关
+  STARTER_CONTACT_ENABLE: false, // 联系模块开关
   STARTER_CONTACT_TITLE: '联系我们',
   STARTER_CONTACT_TEXT: '告诉我们您遇到的问题',
   STARTER_CONTACT_LOCATION_TITLE: '我们的位置',
@@ -297,62 +297,62 @@ const CONFIG = {
   // 页脚三列菜单组
   STARTER_FOOTER_LINK_GROUP: [
     {
-      TITLE: '关于我们',
+      TITLE: '',//关于我们
       LINK_GROUP: [
-        { TITLE: '官方主页', URL: '/#home' },
-        { TITLE: '操作文档', URL: 'https://docs.tangly1024.com/about' },
+        { TITLE: '', URL: '/#home' },//官方主页
+        { TITLE: '', URL: 'https://docs.tangly1024.com/about' },//操作文档
         {
-          TITLE: '帮助支持',
+          TITLE: '',//帮助支持
           URL: 'https://docs.tangly1024.com/article/how-to-question'
         },
         {
-          TITLE: '合作申请',
+          TITLE: '',//合作申请
           URL: 'https://docs.tangly1024.com/article/my-service'
         }
       ]
     },
     {
-      TITLE: '功能特性',
+      TITLE: '',//功能特性
       LINK_GROUP: [
         {
-          TITLE: '部署指南',
+          TITLE: '',//部署指南
           URL: 'https://docs.tangly1024.com/article/vercel-deploy-notion-next'
         },
         {
-          TITLE: '升级指南',
+          TITLE: '',//升级指南
           URL: 'https://docs.tangly1024.com/article/how-to-update-notionnext'
         },
-        { TITLE: '最新版本', URL: 'https://docs.tangly1024.com/article/latest' }
+        { TITLE: '', URL: 'https://docs.tangly1024.com/article/latest' }//最新版本
       ]
     },
     {
-      TITLE: 'Notion写作',
+      TITLE: '',//Notion写作
       LINK_GROUP: [
         {
-          TITLE: 'Notion开始写作',
+          TITLE: '',//Notion开始写作
           URL: 'https://docs.tangly1024.com/article/start-to-write'
         },
         {
-          TITLE: '快捷键提升效率',
+          TITLE: '',//快捷键提升效率
           URL: 'https://docs.tangly1024.com/article/notion-short-key'
         },
         {
-          TITLE: '中国大陆使用Notion',
+          TITLE: '',//中国大陆使用Notion
           URL: 'https://docs.tangly1024.com/article/notion-faster'
         }
       ]
     }
   ],
 
-  STARTER_FOOTER_BLOG_LATEST_TITLE: '最新文章',
+  STARTER_FOOTER_BLOG_LATEST_TITLE: '',//最新文章
 
-  STARTER_FOOTER_PRIVACY_POLICY_TEXT: '隐私政策',
+  STARTER_FOOTER_PRIVACY_POLICY_TEXT: '',//隐私政策
   STARTER_FOOTER_PRIVACY_POLICY_URL: '/privacy-policy',
 
-  STARTER_FOOTER_PRIVACY_LEGAL_NOTICE_TEXT: '法律声明',
+  STARTER_FOOTER_PRIVACY_LEGAL_NOTICE_TEXT: '',//法律声明
   STARTER_FOOTER_PRIVACY_LEGAL_NOTICE_URL: '/legacy-notice',
 
-  STARTER_FOOTER_PRIVACY_TERMS_OF_SERVICE_TEXT: '服务协议',
+  STARTER_FOOTER_PRIVACY_TERMS_OF_SERVICE_TEXT: '',//服务协议
   STARTER_FOOTER_PRIVACY_TERMS_OF_SERVICE_URL: '/terms-of-use',
 
   // 404页面的提示语
@@ -361,12 +361,12 @@ const CONFIG = {
   STARTER_404_BACK: '回到主页',
 
   // 页面底部的行动呼吁模块
-  STARTER_CTA_ENABLE: true,
+  STARTER_CTA_ENABLE: false,
   STARTER_CTA_TITLE: '你还在等待什么呢？',
   STARTER_CTA_TITLE_2: '现在开始吧',
   STARTER_CTA_DESCRIPTION:
     '访问NotionNext的操作文档，我们提供了详细的教程，帮助你即刻搭建站点',
-  STARTER_CTA_BUTTON: true, // 是否显示按钮
+  STARTER_CTA_BUTTON: false, // 是否显示按钮
   STARTER_CTA_BUTTON_URL:
     'https://docs.tangly1024.com/article/vercel-deploy-notion-next',
   STARTER_CTA_BUTTON_TEXT: '开始体验',
