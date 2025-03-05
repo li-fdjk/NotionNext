@@ -37,7 +37,7 @@ export const Hero = props => {
                         href={siteConfig('STARTER_HERO_BUTTON_1_URL', '')}
                         onClick={(e) => {
                           e.preventDefault(); // 阻止默认跳转
-                          const chatButton = document.querySelector(".Chat_btn__out_EXYLJ"); // 获取聊天按钮
+                          const chatButton = document.querySelector("[class*='Chat_btn']"); // 获取聊天按钮
                           if (chatButton) {
                             chatButton.click(); // 模拟用户点击聊天插件
                           } else {
