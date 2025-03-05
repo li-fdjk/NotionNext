@@ -35,6 +35,14 @@ export const Hero = props => {
                     <li>
                       <Link
                         href={siteConfig('STARTER_HERO_BUTTON_1_URL', '')}
+                        onClick={(e) => {
+                          e.preventDefault(); // 阻止默认跳转
+                          if (window.salesmartly && typeof window.salesmartly.openChat === 'function') {
+                            window.salesmartly.openChat(); // 调用 Salesmartly 的展开聊天窗口方法
+                          } else {
+                            console.warn("Salesmartly 插件未加载或 openChat 方法不存在");
+                          }
+                        }}
                         className='inline-flex items-center justify-center rounded-md bg-white px-7 py-[14px] text-center text-base font-medium text-dark shadow-1 transition duration-300 ease-in-out hover:bg-gray-2 hover:text-body-color'>
                         {siteConfig('STARTER_HERO_BUTTON_1_TEXT', null, config)}
                       </Link>
