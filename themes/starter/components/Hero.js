@@ -36,14 +36,26 @@ export const Hero = props => {
                       <Link
                         href={siteConfig('STARTER_HERO_BUTTON_1_URL', '')}
                         onClick={(e) => {
-                          e.preventDefault(); // 阻止默认跳转
-                          const chatButton = document.querySelector("[class*='Chat_btn']"); // 获取聊天按钮
-                          if (chatButton) {
-                            chatButton.click(); // 模拟用户点击聊天插件
-                          } else {
-                            console.warn("未找到聊天插件的入口按钮");
-                          }
-                        }}
+                          e.preventDefault(); // 阻止默认跳转  
+                          function openChat() {
+                            const chatButton = document.querySelector("[class*='Chat_btn']"); // 兼容动态类名
+                            if (chatButton) {
+                              chatButton.click(); // 模拟点击聊天插件
+                              console.log("✅ 成功触发聊天插件");
+                            } else {
+                              console.warn("❌ 未找到聊天插件按钮，2秒后重试...");
+                              setTimeout(() => {
+                                const retryButton = document.querySelector("[class*='Chat_btn']");
+                                if (retryButton) {
+                                  retryButton.click();
+                                  console.log("✅ 重试成功，聊天插件已展开");
+                                } else {
+                                  console.error("🚨 仍未找到聊天插件，请检查插件是否加载");
+                                }
+                              }, 2000);
+                            }
+                          } 
+                          openChat();
                         className='inline-flex items-center justify-center rounded-md bg-white px-7 py-[14px] text-center text-base font-medium text-dark shadow-1 transition duration-300 ease-in-out hover:bg-gray-2 hover:text-body-color'>
                         {siteConfig('STARTER_HERO_BUTTON_1_TEXT', null, config)}
                       </Link>
