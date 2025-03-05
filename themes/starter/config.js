@@ -13,11 +13,10 @@ const CONFIG = {
   STARTER_HERO_TITLE_1: '服务含概：国际快递、转运、集运服务，中国寄美国、英国、法国、日本、意大利等全球180多个国家。提供空运、海运、铁路运输等各种线路。', // 英雄区文字
   STARTER_HERO_TITLE_2: '在淘宝、拼多多、京东购物，寄行李，寄家人包裹，都方便。', // 英雄区文字
   // 英雄区两个按钮，如果TEXT留空则隐藏按钮
-  STARTER_HERO_BUTTON_1_TEXT: '联系我们', // 英雄区按钮
-  STARTER_HERO_BUTTON_1_URL:
-    '/about', // 英雄区按钮
-  STARTER_HERO_BUTTON_2_TEXT: '', // 英雄区按钮
-  STARTER_HERO_BUTTON_2_URL: '', // 英雄区按钮
+  STARTER_HERO_BUTTON_1_TEXT: '', // 英雄区按钮
+  STARTER_HERO_BUTTON_1_URL: '', // 英雄区按钮
+  STARTER_HERO_BUTTON_2_TEXT: '', // 英雄区按钮2
+  STARTER_HERO_BUTTON_2_URL: '', // 英雄区按钮2
   STARTER_HERO_BUTTON_2_ICON: '', // 英雄区按钮2的图标，不需要则留空
 
   // 英雄区配图，如需隐藏，改为空值即可 ''
